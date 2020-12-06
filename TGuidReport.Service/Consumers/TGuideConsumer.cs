@@ -2,7 +2,6 @@
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System;
-using System.Collections.Generic;
 using System.Text;
 using TGuidReportModels;
 
@@ -10,8 +9,6 @@ namespace TGuidReport.Service.Consumers
 {
     public class TGuideConsumer
     {
-
-
         public TGuideConsumerModel Consumer()
         {
             var factory = new ConnectionFactory();

@@ -6,6 +6,6 @@ namespace TGuidReportModels.IRepositories
 {
     public interface ITGuideConsumerModelRepository
     {
-        public TGuideConsumerModel TGuidePublisherModelRepositoryData();
+        public List<TGuideConsumerModel> Consumer();
     }
 }

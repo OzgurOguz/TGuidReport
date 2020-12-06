@@ -13,12 +13,11 @@ namespace TGuidReportAPI.Controllers
     [Route("api/[controller]")]
     public class TGuideReportController : Controller
     {
-        
         [HttpGet]
-        public TGuideConsumerModel GetReport()
+        public List<TGuideConsumerModel> GetReport()
         {
             TGuideConsumerModelRepository guideConsumerModelRepository = new TGuideConsumerModelRepository();
-            return  guideConsumerModelRepository.Consumer();
+            return guideConsumerModelRepository.Consumer();
         }
     }
 }
